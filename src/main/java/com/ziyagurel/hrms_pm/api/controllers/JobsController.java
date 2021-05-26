@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("api/jobs")
+@RequestMapping("/api/jobs")
 public class JobsController {
 
-    IJobService service;
+    private final IJobService service;
 
     @Autowired
     public JobsController(IJobService service) {
